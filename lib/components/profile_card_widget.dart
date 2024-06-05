@@ -47,7 +47,7 @@ class _ProfileCardWidgetState extends State<ProfileCardWidget> {
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(
-        color: FlutterFlowTheme.of(context).secondary,
+        color: FlutterFlowTheme.of(context).primaryText,
         borderRadius: BorderRadius.circular(8.0),
       ),
       child: Padding(
@@ -63,7 +63,7 @@ class _ProfileCardWidgetState extends State<ProfileCardWidget> {
                   widget.title!,
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Readex Pro',
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
+                        color: FlutterFlowTheme.of(context).secondaryText,
                         letterSpacing: 0.0,
                       ),
                 ),

@@ -50,8 +50,32 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Padding(
-                      padding: const EdgeInsetsDirectional.fromSTEB(
-                          12.0, 100.0, 12.0, 0.0),
+                      padding: const EdgeInsets.all(16.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          InkWell(
+                            splashColor: Colors.transparent,
+                            focusColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            onTap: () async {
+                              context.pushNamed('Home');
+                            },
+                            child: Icon(
+                              Icons.arrow_back_ios,
+                              color: FlutterFlowTheme.of(context).secondaryText,
+                              size: 40.0,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(12.0, 50.0, 12.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -123,22 +147,6 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                   .divide(const SizedBox(height: 6.0))
                                   .around(const SizedBox(height: 6.0)),
                             ),
-                          ),
-                          Row(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    100.0, 0.0, 0.0, 0.0),
-                                child: Icon(
-                                  Icons.navigate_next_rounded,
-                                  color: FlutterFlowTheme.of(context)
-                                      .secondaryText,
-                                  size: 40.0,
-                                ),
-                              ),
-                            ],
                           ),
                         ],
                       ),

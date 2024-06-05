@@ -48,7 +48,7 @@ class _ActivityCardWidgetState extends State<ActivityCardWidget> {
       width: double.infinity,
       height: 64.0,
       decoration: BoxDecoration(
-        color: const Color(0xFF1A1D1F),
+        color: FlutterFlowTheme.of(context).secondaryText,
         borderRadius: BorderRadius.circular(8.0),
       ),
       alignment: const AlignmentDirectional(0.0, 0.0),
@@ -79,7 +79,7 @@ class _ActivityCardWidgetState extends State<ActivityCardWidget> {
                     widget.title!,
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
-                          color: Colors.white,
+                          color: FlutterFlowTheme.of(context).primaryText,
                           letterSpacing: 0.0,
                         ),
                   ),
@@ -89,7 +89,7 @@ class _ActivityCardWidgetState extends State<ActivityCardWidget> {
                       widget.subTitle!,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
-                            color: Colors.white,
+                            color: FlutterFlowTheme.of(context).primaryText,
                             letterSpacing: 0.0,
                           ),
                     ),
@@ -98,11 +98,11 @@ class _ActivityCardWidgetState extends State<ActivityCardWidget> {
               ),
             ),
           ),
-          const Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 16.0, 0.0),
+          Padding(
+            padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 16.0, 0.0),
             child: Icon(
               Icons.arrow_forward_ios,
-              color: Colors.white,
+              color: FlutterFlowTheme.of(context).primaryText,
               size: 24.0,
             ),
           ),

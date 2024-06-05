@@ -5,12 +5,12 @@ Future initFirebase() async {
   if (kIsWeb) {
     await Firebase.initializeApp(
         options: const FirebaseOptions(
-            apiKey: "AIzaSyC3_cVXDiitj56RyCJfnXtBbzrYYaZ3zbk",
-            authDomain: "netflix-project-final.firebaseapp.com",
-            projectId: "netflix-project-final",
-            storageBucket: "netflix-project-final.appspot.com",
-            messagingSenderId: "220649432033",
-            appId: "1:220649432033:web:8ea526def74c1be823e8a0"));
+            apiKey: "AIzaSyAvYR2FqXhWZT3qyr3bUvCRCDYK7bzGLlk",
+            authDomain: "netflix-project-final-xsgnz9.firebaseapp.com",
+            projectId: "netflix-project-final-xsgnz9",
+            storageBucket: "netflix-project-final-xsgnz9.appspot.com",
+            messagingSenderId: "209150770892",
+            appId: "1:209150770892:web:ffc878f9b9c47a6850cc69"));
   } else {
     await Firebase.initializeApp();
   }

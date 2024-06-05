@@ -54,8 +54,8 @@ class _MovieCardWidgetState extends State<MovieCardWidget> {
     context.watch<FFAppState>();
 
     return Container(
-      width: 115.0,
-      height: 200.0,
+      width: 131.0,
+      height: 215.0,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).primaryText,
         border: Border.all(
@@ -144,7 +144,7 @@ class _MovieCardWidgetState extends State<MovieCardWidget> {
           ),
           Expanded(
             child: Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
+              padding: const EdgeInsets.all(2.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.center,

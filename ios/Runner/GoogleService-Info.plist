@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyA7RyjKPQ301zcrH4LwB0m999qpxdCE4d0</string>
+	<string>AIzaSyBC-ueIHWg6Y5N6vaepHPyXwzWfyr-1oRU</string>
 	<key>GCM_SENDER_ID</key>
-	<string>220649432033</string>
+	<string>209150770892</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.mycompany.netflixprojectfinal</string>
 	<key>PROJECT_ID</key>
-	<string>netflix-project-final</string>
+	<string>netflix-project-final-xsgnz9</string>
 	<key>STORAGE_BUCKET</key>
-	<string>netflix-project-final.appspot.com</string>
+	<string>netflix-project-final-xsgnz9.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:220649432033:ios:f2e995b615ec4c2923e8a0</string>
+	<string>1:209150770892:ios:64e4da8b275e00fd50cc69</string>
 </dict>
 </plist>

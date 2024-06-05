@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "220649432033",
-    "project_id": "netflix-project-final",
-    "storage_bucket": "netflix-project-final.appspot.com"
+    "project_number": "209150770892",
+    "project_id": "netflix-project-final-xsgnz9",
+    "storage_bucket": "netflix-project-final-xsgnz9.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:220649432033:android:201e0c73256d747223e8a0",
+        "mobilesdk_app_id": "1:209150770892:android:7eef6dbbfc73005050cc69",
         "android_client_info": {
           "package_name": "com.mycompany.netflixprojectfinal"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyClfSxpX6tBd5bAmEGVqm1yDyiH2CZfjuw"
+          "current_key": "AIzaSyChMqRAMMzGMKG-pvDjyyptUJEI4xvAp3c"
         }
       ],
       "services": {

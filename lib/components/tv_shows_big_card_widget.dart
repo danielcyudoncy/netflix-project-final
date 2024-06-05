@@ -76,7 +76,7 @@ class _TvShowsBigCardWidgetState extends State<TvShowsBigCardWidget> {
               gradient: LinearGradient(
                 colors: [
                   Colors.transparent,
-                  FlutterFlowTheme.of(context).primaryText
+                  FlutterFlowTheme.of(context).secondaryText
                 ],
                 stops: const [0.0, 1.0],
                 begin: const AlignmentDirectional(0.0, -1.0),
@@ -115,7 +115,7 @@ class _TvShowsBigCardWidgetState extends State<TvShowsBigCardWidget> {
                                   .override(
                                     fontFamily: 'Outfit',
                                     color: FlutterFlowTheme.of(context)
-                                        .secondaryText,
+                                        .primaryText,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -131,7 +131,7 @@ class _TvShowsBigCardWidgetState extends State<TvShowsBigCardWidget> {
                                         .override(
                                           fontFamily: 'Readex Pro',
                                           color: FlutterFlowTheme.of(context)
-                                              .secondaryText,
+                                              .primaryText,
                                           fontSize: 10.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w300,
@@ -141,7 +141,8 @@ class _TvShowsBigCardWidgetState extends State<TvShowsBigCardWidget> {
                                     width: 6.0,
                                     height: 6.0,
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryText,
                                       shape: BoxShape.circle,
                                       border: Border.all(
                                         color: Colors.white,
@@ -155,7 +156,7 @@ class _TvShowsBigCardWidgetState extends State<TvShowsBigCardWidget> {
                                         .override(
                                           fontFamily: 'Readex Pro',
                                           color: FlutterFlowTheme.of(context)
-                                              .secondaryText,
+                                              .primaryText,
                                           fontSize: 10.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w300,
@@ -165,7 +166,8 @@ class _TvShowsBigCardWidgetState extends State<TvShowsBigCardWidget> {
                                     width: 6.0,
                                     height: 6.0,
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryText,
                                       shape: BoxShape.circle,
                                       border: Border.all(
                                         color: Colors.white,
@@ -179,7 +181,7 @@ class _TvShowsBigCardWidgetState extends State<TvShowsBigCardWidget> {
                                         .override(
                                           fontFamily: 'Readex Pro',
                                           color: FlutterFlowTheme.of(context)
-                                              .secondaryText,
+                                              .primaryText,
                                           fontSize: 10.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w300,
@@ -210,7 +212,7 @@ class _TvShowsBigCardWidgetState extends State<TvShowsBigCardWidget> {
                                           .override(
                                             fontFamily: 'Readex Pro',
                                             color: FlutterFlowTheme.of(context)
-                                                .secondaryText,
+                                                .primaryText,
                                             fontSize: 14.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w600,
@@ -230,7 +232,7 @@ class _TvShowsBigCardWidgetState extends State<TvShowsBigCardWidget> {
                                           .override(
                                             fontFamily: 'Readex Pro',
                                             color: FlutterFlowTheme.of(context)
-                                                .secondaryText,
+                                                .primaryText,
                                             fontSize: 10.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w200,
@@ -256,7 +258,7 @@ class _TvShowsBigCardWidgetState extends State<TvShowsBigCardWidget> {
                                         child: Icon(
                                           Icons.share_outlined,
                                           color: FlutterFlowTheme.of(context)
-                                              .secondaryText,
+                                              .primaryText,
                                           size: 20.0,
                                         ),
                                       ),

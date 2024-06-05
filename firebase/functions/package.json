@@ -18,10 +18,10 @@
   },
   "scripts": {
     "lint": "./node_modules/.bin/eslint --max-warnings=0 .",
-    "serve": "firebase -P netflix-project-final emulators:start --only functions",
-    "shell": "firebase -P netflix-project-final functions:shell",
+    "serve": "firebase -P netflix-project-final-xsgnz9 emulators:start --only functions",
+    "shell": "firebase -P netflix-project-final-xsgnz9 functions:shell",
     "start": "npm run shell",
-    "logs": "firebase -P netflix-project-final functions:log",
+    "logs": "firebase -P netflix-project-final-xsgnz9 functions:log",
     "compile": "cp ../../tsconfig.template.json ./tsconfig-compile.json && tsc --project tsconfig-compile.json"
   },
   "engines": {

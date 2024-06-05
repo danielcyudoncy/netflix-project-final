@@ -50,7 +50,7 @@ class _MovieDetailsWidgetState extends State<MovieDetailsWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).primaryText,
+            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
             body: Center(
               child: SizedBox(
                 width: 50.0,
@@ -71,7 +71,7 @@ class _MovieDetailsWidgetState extends State<MovieDetailsWidget> {
               : FocusScope.of(context).unfocus(),
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: FlutterFlowTheme.of(context).primaryText,
+            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
             body: Padding(
               padding: const EdgeInsets.all(12.0),
               child: SingleChildScrollView(
@@ -116,19 +116,19 @@ class _MovieDetailsWidgetState extends State<MovieDetailsWidget> {
                     ),
                     Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(24.0, 8.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                       child: Text(
                         'Overview',
                         style: FlutterFlowTheme.of(context).titleLarge.override(
                               fontFamily: 'Outfit',
-                              color: FlutterFlowTheme.of(context).secondaryText,
+                              color: FlutterFlowTheme.of(context).primaryText,
                               letterSpacing: 0.0,
                             ),
                       ),
                     ),
                     Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(24.0, 12.0, 24.0, 8.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 24.0, 8.0),
                       child: Text(
                         getJsonField(
                           movieDetailsMovieDetailsResponse.jsonBody,
@@ -137,14 +137,14 @@ class _MovieDetailsWidgetState extends State<MovieDetailsWidget> {
                         maxLines: 5,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Readex Pro',
-                              color: FlutterFlowTheme.of(context).secondaryText,
+                              color: FlutterFlowTheme.of(context).primaryText,
                               letterSpacing: 0.0,
                             ),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsetsDirectional.fromSTEB(
-                          24.0, 20.0, 24.0, 16.0),
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 16.0),
                       child: wrapWithModel(
                         model: _model.sectionTitleModel,
                         updateCallback: () => setState(() {}),
@@ -198,7 +198,7 @@ class _MovieDetailsWidgetState extends State<MovieDetailsWidget> {
                                   final castesItem = castes[castesIndex];
                                   return Padding(
                                     padding: const EdgeInsetsDirectional.fromSTEB(
-                                        24.0, 0.0, 0.0, 0.0),
+                                        12.0, 0.0, 0.0, 0.0),
                                     child: CastCardWidget(
                                       key: Key(
                                           'Keyuu1_${castesIndex}_of_${castes.length}'),
@@ -220,36 +220,31 @@ class _MovieDetailsWidgetState extends State<MovieDetailsWidget> {
                         },
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(24.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            'Reviews',
-                            style: FlutterFlowTheme.of(context)
-                                .titleLarge
-                                .override(
-                                  fontFamily: 'Outfit',
-                                  color: FlutterFlowTheme.of(context)
-                                      .secondaryText,
-                                  letterSpacing: 0.0,
-                                  fontWeight: FontWeight.normal,
-                                ),
-                          ),
-                          Text(
-                            'see all >',
-                            style: FlutterFlowTheme.of(context)
-                                .bodyMedium
-                                .override(
-                                  fontFamily: 'Readex Pro',
-                                  color: const Color(0xFFE9EEEA),
-                                  letterSpacing: 0.0,
-                                ),
-                          ),
-                        ],
-                      ),
+                    Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Reviews',
+                          style: FlutterFlowTheme.of(context)
+                              .titleLarge
+                              .override(
+                                fontFamily: 'Outfit',
+                                color: FlutterFlowTheme.of(context).primaryText,
+                                letterSpacing: 0.0,
+                                fontWeight: FontWeight.normal,
+                              ),
+                        ),
+                        Text(
+                          'see all >',
+                          style:
+                              FlutterFlowTheme.of(context).bodyMedium.override(
+                                    fontFamily: 'Readex Pro',
+                                    color: const Color(0xFFE9EEEA),
+                                    letterSpacing: 0.0,
+                                  ),
+                        ),
+                      ],
                     ),
                     Container(
                       width: double.infinity,
@@ -289,30 +284,26 @@ class _MovieDetailsWidgetState extends State<MovieDetailsWidget> {
                                 itemCount: reviews.length,
                                 itemBuilder: (context, reviewsIndex) {
                                   final reviewsItem = reviews[reviewsIndex];
-                                  return Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        24.0, 0.0, 0.0, 0.0),
-                                    child: ReviewCardWidget(
-                                      key: Key(
-                                          'Keyg76_${reviewsIndex}_of_${reviews.length}'),
-                                      image: valueOrDefault<String>(
-                                        'https://www.themoviedb.org/t/p/w45_and_h45_face${getJsonField(
-                                          reviewsItem,
-                                          r'''$.author_details.avatar_path''',
-                                        ).toString()}',
-                                        'https://www.themoviedb.org/t/p/w45_and_h45_face/utEXl2EDiXBK6f41wCLsvprvMg4.jpg',
-                                      ),
-                                      name: getJsonField(
+                                  return ReviewCardWidget(
+                                    key: Key(
+                                        'Keyg76_${reviewsIndex}_of_${reviews.length}'),
+                                    image: valueOrDefault<String>(
+                                      'https://www.themoviedb.org/t/p/w45_and_h45_face${getJsonField(
                                         reviewsItem,
-                                        r'''$.author''',
-                                      ).toString(),
-                                      review: getJsonField(
-                                        reviewsItem,
-                                        r'''$.content''',
-                                      ).toString(),
-                                      rating: 4.5,
-                                      duration: '1w ago',
+                                        r'''$.author_details.avatar_path''',
+                                      ).toString()}',
+                                      'https://www.themoviedb.org/t/p/w45_and_h45_face/utEXl2EDiXBK6f41wCLsvprvMg4.jpg',
                                     ),
+                                    name: getJsonField(
+                                      reviewsItem,
+                                      r'''$.author''',
+                                    ).toString(),
+                                    review: getJsonField(
+                                      reviewsItem,
+                                      r'''$.content''',
+                                    ).toString(),
+                                    rating: 4.5,
+                                    duration: '1w ago',
                                   );
                                 },
                               );
